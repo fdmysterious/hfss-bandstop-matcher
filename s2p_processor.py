@@ -100,8 +100,9 @@ class Simulation_Manager:
         """
 
         # Set design variables
-        self.hfss["$Ers"]   = er
-        self.hfss["$tands"] = tand
+        self.hfss["$Ers"]     = er
+        self.hfss["$tands"]   = tand
+        self.hfss["$tsample"] = tsample
 
         # Create setup
         self.setup = self.hfss.create_setup(self.setup_name)

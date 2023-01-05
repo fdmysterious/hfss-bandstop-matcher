@@ -13,10 +13,10 @@ if __name__ == "__main__":
     # Chargement des paramètres
     log.info("Chargement des paramètres depuis le toml")
     config = dict()
-    with open("RO4003C/config.toml", "r") as fhandle:
+    with open("RO3210/config.toml", "r") as fhandle:
         config = toml.load(fhandle)
 
-    output_directory = Path("RO4003C_output")
+    output_directory = Path("RO3210_output")
 
     for sim_id, sim_info in config["input"]["files"].items():
         log.info(f"------------------ Process {sim_id}")
